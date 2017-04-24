@@ -1,0 +1,13 @@
+package input_processor;
+
+import mda_efsm.MDA;
+
+public class gasPump1 {
+
+	private MDA mda = new MDA();
+	
+	public void activate(float a, float b){
+		
+	}
+	
+}

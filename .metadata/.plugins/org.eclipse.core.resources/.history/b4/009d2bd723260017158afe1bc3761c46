@@ -1,0 +1,8 @@
+package cs586TermProject;
+
+public class State0 {
+
+	public void start(){
+		
+	}
+}

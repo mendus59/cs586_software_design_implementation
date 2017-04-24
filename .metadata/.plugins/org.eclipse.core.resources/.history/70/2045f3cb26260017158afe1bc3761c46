@@ -1,0 +1,11 @@
+package input_processor;
+
+public class gasPump1 {
+
+	private static mda = new mda();
+	
+	public void activate(float a, float b){
+		
+	}
+	
+}

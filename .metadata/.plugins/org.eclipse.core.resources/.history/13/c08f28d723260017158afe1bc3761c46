@@ -1,0 +1,11 @@
+package cs586TermProject;
+
+public class State5 {
+
+	public void pump(){
+		
+	}
+	public void stopPump(){
+		
+	}
+}

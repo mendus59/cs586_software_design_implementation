@@ -1,0 +1,25 @@
+package mda_efsm;
+
+public class mda {
+
+	public State[] states = new State[7];
+	public State currentState;
+	
+	public mda(){
+		states[0] = new State0();
+	}
+	
+	public void activate(){}
+	public void start(){}
+	public void payType(){}
+	public void reject(){}
+	public void cancel(){}
+	public void approve(){}
+	public void startPump(){}
+	public void pump(){}
+	public void stopPump(){}
+	public void selectGas(int g){}
+	public void receipt(){}
+	public void noReceipt(){}
+	
+}

@@ -1,0 +1,11 @@
+package cs586TermProject;
+
+public class State6 {
+
+	public void receipt(){
+		
+	}
+	public void noReceipt(){
+		
+	}
+}

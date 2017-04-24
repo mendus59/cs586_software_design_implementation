@@ -1,0 +1,11 @@
+package cs586TermProject;
+
+public class State2 {
+
+	public void approve(){
+		
+	}
+	public void reject(){
+		
+	}
+}
