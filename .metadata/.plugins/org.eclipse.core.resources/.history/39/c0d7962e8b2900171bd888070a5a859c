@@ -1,0 +1,59 @@
+package mda_efsm;
+
+public class MDA {
+
+	public State[] states = new State[7];
+	public State currentState;
+	
+	public MDA(){
+		states[0] = new State0(this);
+		states[1] = new State1(this);
+		states[2] = new State2(this);
+		states[3] = new State3(this);
+		states[4] = new State4(this);
+		states[5] = new State5(this);
+		states[6] = new State6(this);	
+		currentState = new StartState(this);
+	}
+	
+	public void changeState(int ID){
+		this.currentState = this.states[ID];
+	}
+	
+	public void activate(){
+	}
+	public void start(){
+		currentState.start();
+	}
+	public void payType(int t){
+		currentState.payType(t);
+	}
+	public void reject(){
+		currentState.reject();
+	}
+	public void cancel(){
+		currentState.cancel();
+	}
+	public void approve(){
+		currentState.approve();
+	}
+	public void startPump(){
+		currentState.startPump();
+	}
+	public void pump(){
+		currentState.pump();
+	}
+	public void stopPump(){
+		currentState.stopPump();
+	}
+	public void selectGas(int g){
+		currentState.selectGas(g);
+	}
+	public void receipt(){
+		currentState.receipt();
+	}
+	public void noReceipt(){
+		currentState.noReceipt();
+	}
+	
+}

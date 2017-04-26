@@ -1,0 +1,5 @@
+package output_processor;
+
+public class ReadyMessage1 {
+
+}

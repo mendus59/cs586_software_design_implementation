@@ -1,0 +1,38 @@
+package input_processor;
+
+import mda_efsm.MDA;
+import mda_efsm.DataStore;
+
+public class gasPump2 {
+
+	private MDA mda;
+	private DataStore ds;
+	
+	public gasPump2(){
+		mda = new MDA();
+	}
+	
+	public void setDataStore(DataStore ds){
+		this.ds = ds;
+	}
+	
+	public void activate(int a, int b, int c){
+		if (a > 0 && b > 0 && c > 0){
+			ds.setA(a);
+			ds.setB(b);
+			ds.setC(c);
+			mda.activate();
+		}
+	}
+	
+	public void start(){
+		mda.start();
+	}
+	
+	public void payCash(float c){
+		if (c > 0){
+			ds.setCash(c);
+			mda.payType(2);
+		}
+	}
+}

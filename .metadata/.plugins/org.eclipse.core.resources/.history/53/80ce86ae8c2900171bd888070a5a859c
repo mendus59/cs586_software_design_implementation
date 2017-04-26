@@ -1,0 +1,17 @@
+package mda_efsm;
+
+public class State6 extends State{
+
+	private MDA mda;
+	
+	public State6(MDA mda){
+		this.mda = mda;
+	}
+	
+	public void receipt(){
+		
+	}
+	public void noReceipt(){
+		
+	}
+}

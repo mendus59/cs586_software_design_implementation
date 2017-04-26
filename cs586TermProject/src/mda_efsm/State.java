@@ -1,6 +1,8 @@
 package mda_efsm;
 
 public abstract class State {
+	
+	public void activate(){}
 	public void start(){}
 	public void payType(int t){}
 	public void reject(){}

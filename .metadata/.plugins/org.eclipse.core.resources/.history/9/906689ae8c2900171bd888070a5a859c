@@ -1,0 +1,17 @@
+package mda_efsm;
+
+public class State5 extends State{
+
+	private MDA mda;
+	
+	public State5(MDA mda){
+		this.mda = mda;
+	}
+	
+	public void pump(){
+		
+	}
+	public void stopPump(){
+		
+	}
+}

@@ -1,0 +1,17 @@
+package mda_efsm;
+
+public class State3 extends State{
+
+	private MDA mda;
+	
+	public State3(MDA mda){
+		this.mda = mda;
+	}
+	
+	public void cancel(){
+		
+	}
+	public void selectGas(int g){
+		
+	}
+}

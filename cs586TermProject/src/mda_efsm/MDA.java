@@ -6,26 +6,55 @@ public class MDA {
 	public State currentState;
 	
 	public MDA(){
-		states[0] = new State0();
-		states[1] = new State1();
-		states[2] = new State2();
-		states[3] = new State3();
-		states[4] = new State4();
-		states[5] = new State5();
-		states[6] = new State6();
+		states[0] = new State0(this);
+		states[1] = new State1(this);
+		states[2] = new State2(this);
+		states[3] = new State3(this);
+		states[4] = new State4(this);
+		states[5] = new State5(this);
+		states[6] = new State6(this);	
+		currentState = new StartState(this);
 	}
 	
-	public void activate(){}
-	public void start(){}
-	public void payType(int t){}
-	public void reject(){}
-	public void cancel(){}
-	public void approve(){}
-	public void startPump(){}
-	public void pump(){}
-	public void stopPump(){}
-	public void selectGas(int g){}
-	public void receipt(){}
-	public void noReceipt(){}
+	public void changeState(int ID){
+		this.currentState = this.states[ID];
+	}
+	
+	public void activate(){
+		currentState.activate();
+	}
+	public void start(){
+		currentState.start();
+	}
+	public void payType(int t){
+		currentState.payType(t);
+	}
+	public void reject(){
+		currentState.reject();
+	}
+	public void cancel(){
+		currentState.cancel();
+	}
+	public void approve(){
+		currentState.approve();
+	}
+	public void startPump(){
+		currentState.startPump();
+	}
+	public void pump(){
+		currentState.pump();
+	}
+	public void stopPump(){
+		currentState.stopPump();
+	}
+	public void selectGas(int g){
+		currentState.selectGas(g);
+	}
+	public void receipt(){
+		currentState.receipt();
+	}
+	public void noReceipt(){
+		currentState.noReceipt();
+	}
 	
 }

@@ -1,0 +1,17 @@
+package mda_efsm;
+
+public class State2 extends State{
+
+	private MDA mda;
+	
+	public State2(MDA mda){
+		this.mda = mda;
+	}
+	
+	public void approve(){
+		
+	}
+	public void reject(){
+		
+	}
+}

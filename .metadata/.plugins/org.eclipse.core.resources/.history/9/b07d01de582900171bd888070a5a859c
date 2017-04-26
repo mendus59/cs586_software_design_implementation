@@ -1,0 +1,48 @@
+package mda_efsm;
+
+public class DataStore {
+
+	private float temp_a;
+	private float temp_b;
+	private int temp_c;
+	private float cash;
+	
+	public DataStore(){
+		
+	}
+	
+	public float getA(){
+		return this.temp_a;
+	}
+	public float getB(){
+		return this.temp_b;
+	}
+	public float getC(){
+		return this.temp_c;
+	}
+	public float getCash(){
+		return this.cash;
+	}
+	
+	public void setA(float a){
+		this.temp_a = a;
+	}
+	public void setB(float b){
+		this.temp_b = b;
+	}
+	
+	public void setA(int a){
+		this.temp_a = (float)a;
+	}
+	public void setB(int b){
+		this.temp_b = (float)b;
+	}
+	public void setC(int c){
+		this.temp_c = c;
+	}
+	
+	public void setCash(float cash){
+		this.cash = cash;
+	}
+	
+}
